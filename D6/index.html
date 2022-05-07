@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formularz osobowy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <table class="table1">
+    <tbody>
+      <tr><td>Poniedziałek</td></tr>
+      <tr><td>Wtorek</td></tr>
+      <tr><td>Środa</td></tr>
+      <tr><td>Czwartek</td></tr>
+      <tr><td>Piątek</td></tr>
+      <tr><td>Sobota</td></tr>
+      <tr><td>Niedziela</td></tr>
+    </tbody>
+  </table><br/>
+
+  <button onclick="zamienWezly()">Zamień</button><br/>
+  
+  <form name="user_data">
+    <table>
+      <tr>
+        <td>Imię</td>
+        <td><input type="text" name="imie">
+        <span class="blad" id="blad_imie" /></td>
+      </tr>
+      <tr> 
+        <td>Wykształcenie </td>
+        <td>
+          <input name="wyksztalcenie" value="wyksztalcenie_p" checked type="radio" onclick="pokazElement()"/>podstawowe<br />
+          <input name="wyksztalcenie" value="wyksztalcenie_s" type="radio" onclick="ukryjElement()"/>średnie </br>
+          <input name="wyksztalcenie" value="wyksztalcenie_w" type="radio" onclick="ukryjElement()"/>wyższe
+        </td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td><input type="text" name="email">
+        <span class="blad" id="blad_email" /></td>
+      </tr>
+      <tr> 
+        <td>Kod pocztowy</td>
+        <td> <span id="KodPocztowy">
+          <input type="text" name="kod"> </span>
+        <span class="blad" id="blad_kod" /></td>
+      </tr>
+      <tr>
+        <td>Wiadomość</td>
+        <td><textarea rows="5" cols="15" name="wiadomosc" onkeyup="licznik(this.form.wiadomosc, document.getElementById('zostalo'), 150)"></textarea>
+        <span class="blad" id="blad_wiadomosc" /></td>
+      </tr>
+      <tr>
+        <td>Pozostało <span id="zostalo">150</span> znaków</td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Wyślij" onclick="return weryfikacja()"></td>
+      </tr>
+    </table>
+  </form>
+
+  <script src="code.js"></script>
+</body>
+
+</html>
