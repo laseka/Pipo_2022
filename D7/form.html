@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>zadanie D7</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav d-flex justify-content-between w-100">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link active" aria-current="page" href="form.html">Form</a>
+					<a class="nav-link" href="page.html">Subpage</a>
+					<a class="nav-link" href="video.html">Media</a>
+					<a class="nav-link" href="json.html">Json</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+  <div class="main">
+    <header class="header">
+      <h2>Fill in the form about nothing</h2>
+    </header>
+
+    <form class="form" action="/index.html">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" required><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" required placeholder="email"><br>
+      <label for="email">Age:</label><br>
+      <input type="number" size="6" name="age" min="18" max="99" value="21"><br><br>
+      <label for="fav_language">Choose something:</label><br>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label>HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS" required>
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+      <label>Do you have any of these?</label><br>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+
+	<div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

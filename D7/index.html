@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>zadanie D7</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav d-flex justify-content-between w-100">
+					<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					<a class="nav-link" href="form.html">Form</a>
+					<a class="nav-link" href="page.html">Subpage</a>
+					<a class="nav-link" href="video.html">Media</a>
+					<a class="nav-link" href="json.html">Json</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+  <div class="main">
+    <header class="header">
+      <h1 class="display-4 shadow p-3 mb-5 rounded rounded-pill">Main page with stuff</h1>
+    </header>
+    
+    <div class="container p-3">
+      <h3 class="text-center display-6">Random list of things</h3>
+      <ol class="lead">
+        <li>Types of decisions</li>
+        <ul>
+          <li class="text-success">Good decision</li>
+          <li class="text-danger">Bad decision</li>
+          <li class="text-secondary">No decision -> Bad decision</li>
+        </ul>
+        <li>Another point</li>
+        <li>And another point</li>
+      </ol>
+    </div>
+
+    <div class="container bg-dark text-white rounded-pill">
+      <details class="px-5 fst-italic">
+      <summary class="text-center h5 pt-2 text-decoration-underline">Ciekawostka </summary>
+      <p class="fw-lighter">Just as colors are made more dramatic in sunsets on Earth, sunsets on Mars, according to NASA,  would appear bluish to human observers watching from the red planet. Fine dust makes the blue near the Sun's part of the sky much more visibilke, while normal daylight makes the Red Planet's familiar rusty dust color the most perceptible to the human eye.</p>
+      </details><br>
+    </div>
+
+    <div class="accordion accordion-flush pt-3" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body fw-light">This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body fw-light">This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body fw-light">This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-3">
+      <p>
+        <button class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</button>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="d-grid gap-2 p-3 h5">
+      <div class="p-2 text-center bg-light border border-dark border-3 rounded">Grid item 1</div>
+      <div class="p-2 text-center bg-light border border-dark border-3 rounded">Grid item 2</div>
+      <div class="p-2 text-center bg-light border border-dark border-3 rounded">Grid item 3</div>
+    </div>
+		
+    <div class="text-center p-3">
+      <button type="button" class="button1" id="buttonWithID">Click to do nothing</button>
+    </div>
+
+
+
+  </div>
+
+	<div id="footer"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
